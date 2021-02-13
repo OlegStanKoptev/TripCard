@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC1AE4C925D848F100AC3FA1 /* TripCardStickers StickerPackExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC1AE4C825D848F100AC3FA1 /* TripCardStickers StickerPackExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC1AE4CD25D848F100AC3FA1 /* Stickers.xcstickers in Resources */ = {isa = PBXBuildFile; fileRef = DC1AE4CC25D848F100AC3FA1 /* Stickers.xcstickers */; };
+		DC1AE4CE25D848F100AC3FA1 /* Stickers.xcstickers in Resources */ = {isa = PBXBuildFile; fileRef = DC1AE4CC25D848F100AC3FA1 /* Stickers.xcstickers */; };
 		DC653E7C25C2F2640001AFFE /* TripCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC653E7B25C2F2640001AFFE /* TripCollectionViewCell.swift */; };
 		DC653E8025C2F3710001AFFE /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC653E7F25C2F3710001AFFE /* Trip.swift */; };
 		DCEEC55B25C2E9670019FBBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEEC55A25C2E9670019FBBE /* AppDelegate.swift */; };
@@ -17,7 +20,34 @@
 		DCEEC56725C2E9680019FBBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCEEC56525C2E9680019FBBE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DC1AE4CA25D848F100AC3FA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCEEC54F25C2E9670019FBBE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC1AE4C725D848F100AC3FA1;
+			remoteInfo = "TripCardStickers StickerPackExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC1AE4D125D848F100AC3FA1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DC1AE4C925D848F100AC3FA1 /* TripCardStickers StickerPackExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DC1AE4C525D848F100AC3FA1 /* TripCardStickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripCardStickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1AE4C825D848F100AC3FA1 /* TripCardStickers StickerPackExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TripCardStickers StickerPackExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1AE4CC25D848F100AC3FA1 /* Stickers.xcstickers */ = {isa = PBXFileReference; lastKnownFileType = folder.stickers; name = Stickers.xcstickers; path = "TripCardStickers StickerPackExtension/Stickers.xcstickers"; sourceTree = "<group>"; };
 		DC653E7B25C2F2640001AFFE /* TripCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCollectionViewCell.swift; sourceTree = "<group>"; };
 		DC653E7F25C2F3710001AFFE /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		DCEEC55725C2E9670019FBBE /* TripCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +74,7 @@
 		DCEEC54E25C2E9670019FBBE = {
 			isa = PBXGroup;
 			children = (
+				DC1AE4CC25D848F100AC3FA1 /* Stickers.xcstickers */,
 				DCEEC55925C2E9670019FBBE /* TripCard */,
 				DCEEC55825C2E9670019FBBE /* Products */,
 			);
@@ -53,6 +84,8 @@
 			isa = PBXGroup;
 			children = (
 				DCEEC55725C2E9670019FBBE /* TripCard.app */,
+				DC1AE4C525D848F100AC3FA1 /* TripCardStickers.app */,
+				DC1AE4C825D848F100AC3FA1 /* TripCardStickers StickerPackExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +109,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC1AE4C425D848F100AC3FA1 /* TripCardStickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1AE4D525D848F100AC3FA1 /* Build configuration list for PBXNativeTarget "TripCardStickers" */;
+			buildPhases = (
+				DC1AE4C325D848F100AC3FA1 /* Resources */,
+				DC1AE4D125D848F100AC3FA1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC1AE4CB25D848F100AC3FA1 /* PBXTargetDependency */,
+			);
+			name = TripCardStickers;
+			productName = TripCardStickers;
+			productReference = DC1AE4C525D848F100AC3FA1 /* TripCardStickers.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		DC1AE4C725D848F100AC3FA1 /* TripCardStickers StickerPackExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1AE4D425D848F100AC3FA1 /* Build configuration list for PBXNativeTarget "TripCardStickers StickerPackExtension" */;
+			buildPhases = (
+				DC1AE4C625D848F100AC3FA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TripCardStickers StickerPackExtension";
+			productName = "TripCardStickers StickerPackExtension";
+			productReference = DC1AE4C825D848F100AC3FA1 /* TripCardStickers StickerPackExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 		DCEEC55625C2E9670019FBBE /* TripCard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCEEC56B25C2E9680019FBBE /* Build configuration list for PBXNativeTarget "TripCard" */;
@@ -102,6 +167,12 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					DC1AE4C425D848F100AC3FA1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					DC1AE4C725D848F100AC3FA1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					DCEEC55625C2E9670019FBBE = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -121,11 +192,29 @@
 			projectRoot = "";
 			targets = (
 				DCEEC55625C2E9670019FBBE /* TripCard */,
+				DC1AE4C425D848F100AC3FA1 /* TripCardStickers */,
+				DC1AE4C725D848F100AC3FA1 /* TripCardStickers StickerPackExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC1AE4C325D848F100AC3FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1AE4CE25D848F100AC3FA1 /* Stickers.xcstickers in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC1AE4C625D848F100AC3FA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1AE4CD25D848F100AC3FA1 /* Stickers.xcstickers in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCEEC55525C2E9670019FBBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +242,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DC1AE4CB25D848F100AC3FA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC1AE4C725D848F100AC3FA1 /* TripCardStickers StickerPackExtension */;
+			targetProxy = DC1AE4CA25D848F100AC3FA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		DCEEC56025C2E9670019FBBE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -173,6 +270,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		DC1AE4CF25D848F100AC3FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ZY3SQBRC4;
+				INFOPLIST_FILE = TripCardStickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koptev.TripCardStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC1AE4D025D848F100AC3FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ZY3SQBRC4;
+				INFOPLIST_FILE = TripCardStickers/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koptev.TripCardStickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC1AE4D225D848F100AC3FA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ZY3SQBRC4;
+				INFOPLIST_FILE = "TripCardStickers StickerPackExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koptev.TripCardStickers.StickerPackExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC1AE4D325D848F100AC3FA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ZY3SQBRC4;
+				INFOPLIST_FILE = "TripCardStickers StickerPackExtension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koptev.TripCardStickers.StickerPackExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DCEEC56925C2E9680019FBBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -330,6 +485,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC1AE4D425D848F100AC3FA1 /* Build configuration list for PBXNativeTarget "TripCardStickers StickerPackExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1AE4D225D848F100AC3FA1 /* Debug */,
+				DC1AE4D325D848F100AC3FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC1AE4D525D848F100AC3FA1 /* Build configuration list for PBXNativeTarget "TripCardStickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC1AE4CF25D848F100AC3FA1 /* Debug */,
+				DC1AE4D025D848F100AC3FA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCEEC55225C2E9670019FBBE /* Build configuration list for PBXProject "TripCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
